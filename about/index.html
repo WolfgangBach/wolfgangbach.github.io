@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Wolfgang, Blog, IT, Bach">
     <link rel="shortcut icon" href="/img/wolfgangs_face.ico">
 
-    <title>Categories | Wolfgangs webpage</title>
+    <title>Wolfgangs webpage</title>
 
-    <link rel="canonical" href="/categories/">
+    <link rel="canonical" href="/about/">
 
     
     
@@ -188,40 +188,137 @@ if (!doNotTrack) {
         <div class="row">
             
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+            
+                 
+ <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> German </option>
+    <option value="1"> English </option>
+</select>
 
-         	
                 
+                <div class="de post-container">
+                    
+                    <h2 id="über-mich">Über mich</h2>
+<p><strong><em>Wolfgang Bach</em></strong></p>
+<p>Daran wird gerade gearbeitet</p>
+
+                </div>
+            
+                
+                <div class="en post-container">
+                    <h2 id="about-me">About Me</h2>
+<p><strong><em>Wolfgang Bach</em></strong></p>
+<p>work in progress</p>
+
+                </div>
+            
+             
+            
 
 
 
-
+            
             </div>
             
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
+            
 
-                
-                
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        
-                        
-                        
-                        
-                    </div>
-                </section>
-                
-
-                
-                
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/about">
+               <img src="/img/wolfgangs_face.jpg" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Enthusiast, Open Minded and Bachelor&#39;s Degree</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:webpage.info.wolfgang@gmail.com">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/WolfgangBach">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/wolfgang-bach-53755815b/">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+            
+            
+               
+               
+               
+               
+                </ul>
             </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    
+</div>
+
         </div>
     </div>
 </article>
@@ -284,7 +381,7 @@ if (!doNotTrack) {
             
            
                    <li>
-                       <a href='/categories/index.xml' rel="alternate" type="application/rss+xml" title="Wolfgangs Page" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="Wolfgangs Page" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
@@ -409,6 +506,57 @@ if (!doNotTrack) {
 </script>
 
 
+
+<script type="text/javascript">
+    
+    var $de = document.querySelector(".de");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    
+    function getLang() { return new URLSearchParams(document.location.search).get("lang") }
+
+    function setLang(newLang) {
+        var params = new URLSearchParams(document.location.search)
+        params.set("lang", newLang)
+        document.location.search = params.toString()  
+    }
+
+    
+    function _render() {
+        var lang = getLang()
+        
+        if (lang == "en") {
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $en.classList.add("active");
+            $de.style.display = "none";
+            $de.classList.remove("active");
+            
+        } else {
+            $select.selectedIndex = 0;
+            $de.style.display = "block";
+            $de.classList.add("active");
+            $en.style.display = "none";
+            $en.classList.remove("active");
+        }
+        
+        generateCatalog(".catalog-body");
+    }
+
+    
+    function onLanChange(index) {
+        if (index == 0) {
+            lang = "de"
+        } else {
+            lang = "en"
+        }
+        setLang(lang)
+    }
+
+    
+    _render();
+</script>
 
 
 

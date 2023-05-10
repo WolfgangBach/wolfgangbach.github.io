@@ -1,20 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wolfgangs Blog</title>
+    <title>Wolfgangs Page</title>
     <link>https://wolfgangbach.github.io/</link>
-    <description>Recent content on Wolfgangs Blog</description>
+    <description>Recent content on Wolfgangs Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Apr 2023 10:05:14 +0200</lastBuildDate><atom:link href="https://wolfgangbach.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wolfgangbach.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mypost</title>
-      <link>https://wolfgangbach.github.io/posts/mypost/</link>
-      <pubDate>Fri, 07 Apr 2023 10:05:14 +0200</pubDate>
+      <title>First post</title>
+      <link>https://wolfgangbach.github.io/2023/10/05/the-first-post/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://wolfgangbach.github.io/posts/mypost/</guid>
-      <description>This is some content
-public static void main(String[]args){ System.out.println(&amp;#34;This is a print statement&amp;#34;); } </description>
+      <guid>https://wolfgangbach.github.io/2023/10/05/the-first-post/</guid>
+      <description>The first little post Welcome, dear reader! It&amp;rsquo;s great to have you here on my brand new webpage.
+If you&amp;rsquo;re interested in learning more about me, please feel free to check out the About Me section.
+I&amp;rsquo;m still new to building websites, so there may be some issues here and there. This website was built using Hugo, which is a static webpage tool that heavily utilizes markdown.
+That&amp;rsquo;s all for now, but if you need to contact me, the best way to reach me is through email.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wolfgangbach.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolfgangbach.github.io/about/</guid>
+      <description>About Me Wolfgang Bach
+work in progress</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wolfgangbach.github.io/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolfgangbach.github.io/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wolfgangbach.github.io/search/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolfgangbach.github.io/search/placeholder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posts Archive</title>
+      <link>https://wolfgangbach.github.io/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolfgangbach.github.io/archive/</guid>
+      <description></description>
     </item>
     
   </channel>
