@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>first on Wolfgangs Page</title>
+    <link>https://wolfgangbach.github.io/tags/first/</link>
+    <description>Recent content in first on Wolfgangs Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wolfgangbach.github.io/tags/first/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First post</title>
+      <link>https://wolfgangbach.github.io/2023/10/05/the-first-post/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://wolfgangbach.github.io/2023/10/05/the-first-post/</guid>
+      <description>The first little post Welcome, dear reader! It&amp;rsquo;s great to have you here on my brand new webpage.
+If you&amp;rsquo;re interested in learning more about me, please feel free to check out the About Me section.
+I&amp;rsquo;m still new to building websites, so there may be some issues here and there. This website was built using Hugo, which is a static webpage tool that heavily utilizes markdown.
+That&amp;rsquo;s all for now, but if you need to contact me, the best way to reach me is through email.</description>
+    </item>
+    
+  </channel>
+</rss>
